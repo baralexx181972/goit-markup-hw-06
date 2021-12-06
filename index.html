@@ -447,12 +447,22 @@
               </ul>
             </div>
             <div class="online">
-              <h2 class="online-title">подпишитесь на рассылку</h2>
               <form action="#" class="online-form">
+              <h2 class="online-title">подпишитесь на рассылку</h2>
+              <div class="online-signup">
+
                 <input type="text"
                 class="online-input"
                 name="online-name"
                 placeholder="E-mail">
+                  <button type="submit" class="footer-form-button">
+                    Подписаться
+                    <svg class="footer-button-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+
               </form>
             </div>
           </div>
@@ -464,7 +474,7 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="modal-close" data-modal-close >
-              <svg class="modal-close-icon" width="11" height="11">
+              <svg class="modal-close-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-close">
                   
                 </use>
@@ -522,10 +532,16 @@
                 <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden" />
                 <label for="policy" class="check-text">
                   <span class="check-item">
-                    <svg class="check-icon" width="8" height="11">
+                    <svg class="check-icon" width="16" height="15">
                       <use href="./images/icons.svg#icon-icon-check"></use>
                     </svg>
-                  </span> Соглашаюсь с рассылкой и принимаю
+                  </span>
+                  <span class="policy-text">
+                    Соглашаюсь с рассылкой и принимаю&nbsp
+                  </span>
+                  <a href="" class="modal-checkbox-link">
+                    Условия договора
+                  </a>
                 </label>
               </div>
               <button class="modal-button" type="submit">Отправить</button>

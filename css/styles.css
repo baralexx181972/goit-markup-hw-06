@@ -576,10 +576,14 @@ img {
 }
 
 .online {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
-.online-title {
+.online-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
 }
 
 .online-title {
@@ -595,10 +599,31 @@ img {
 .online-input {
   width: 358px;
   height: 50px;
-  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background-color: inherit;
+  padding: 15px 16px;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.footer-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #ffffff;
+}
+
+.footer-button-icon {
+  margin-left: 10px;
+  fill: #ffffff;
 }
 
 /*--------------------Modal window---------------- */
@@ -636,14 +661,20 @@ img {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
-  top: 11px;
-  right: 11px;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -664,7 +695,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .input-wrap {
@@ -735,6 +766,7 @@ img {
 }
 
 .check-text {
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -751,10 +783,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .check-icon {
   fill: #ffffff;
+}
+.policy-text,
+.modal-checkbox-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.modal-checkbox-link {
+  text-decoration-line: underline;
+  color: #2196f3;
 }
 
 .modal-check:checked + .check-text .check-item {
