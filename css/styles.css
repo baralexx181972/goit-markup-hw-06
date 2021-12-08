@@ -586,16 +586,6 @@ img {
   margin-left: auto;
 }
 
-.online-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--second-title-color);
-}
-
 .online-input {
   width: 358px;
   height: 50px;
@@ -608,6 +598,8 @@ img {
 }
 
 .footer-form-button {
+  cursor: pointer;
+  border: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -695,7 +687,10 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+.modal-comment {
+  margin-bottom: 20px;
 }
 
 .input-wrap {
@@ -766,12 +761,14 @@ img {
 }
 
 .check-text {
+  align-items: center;
   justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--first-contacts-color);
   display: flex;
+  margin-bottom: 30px;
 }
 
 .check-item {
